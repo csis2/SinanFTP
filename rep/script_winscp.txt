@@ -1,0 +1,4 @@
+open ftp://sinan_ftp:9c6yrbrj@pentaho-prod.saude-go.net
+cd /Dengue
+put c:\sinanftp\tmp\deng\dengon.dbf
+exit

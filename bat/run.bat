@@ -1,0 +1,1 @@
+c:\SinanFTP\exe\baixaDBFx anoatual+passado
