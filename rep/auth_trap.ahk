@@ -23,11 +23,11 @@ SetTitleMatchMode Slow
 GLOBAL cLoginProxyConfig := ""
 GLOBAL cSenhaProxyConfig := ""
 
-; Lê no arquivo de configuração se há permissão para trabalhar com acesso ao PC utilizando login e senha.
+; Lê no arquivo de configuração se há permissão para trabalhar com a rede proxy.
 IniRead, OutputVar33, c:\SinanFTP\set\SetSinanFTP2.ini, PROXY, Usa?
 if (OutputVar33 <> "true")
 {
-msgbox Você não concedeu permissão para trabalhar com a rede proxy do PC.
+msgbox Você não concedeu permissão para trabalhar com a rede proxy.
 msgbox Acesse o programa "config.exe" e faça o ajuste necessário.
 ExitApp
 }
@@ -112,4 +112,7 @@ Sleep 1000
 Send {Tab}
 Sleep 1000
 Send {Enter}
+Sleep 3000
+Process, close, firefox.exe
+ExitApp
 return

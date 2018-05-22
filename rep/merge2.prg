@@ -95,10 +95,13 @@ set color to g+/n
 @ 11,1 say "Criando a estrutura da tabela chikx.dbf..."
 run ('c:\sinanftp\exe\escritor "Criando a estrutura da tabela chikx.dbf..."')
 aDbf := {}
-        AADD(aDbf, { "classi_fin", "C", 2, 0 })
-        AADD(aDbf, { "criterio", "C", 1, 0 })
-        AADD(aDbf, { "evolucao", "C", 1, 0 })
-        AADD(aDbf, { "dt_encerra", "D", 8, 0 })
+        AADD(aDbf, { "nu_notific", "C", 7, 0 })
+        AADD(aDbf, { "dt_sin_pri", "D", 8, 0 })
+        AADD(aDbf, { "sem_pri", "C", 6, 0 })
+        AADD(aDbf, { "id_mn_resi", "C", 6, 0 })
+		AADD(aDbf, { "classi_fin", "C", 2, 0 })
+		AADD(aDbf, { "dt_obito", "D", 8, 0 })
+		AADD(aDbf, { "coufinf", "C", 2, 0 })
 DBCREATE("c:\sinanftp\tmp\chik\chikx", aDbf)
 endif
 

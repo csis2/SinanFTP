@@ -4,7 +4,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; Script BaixaDBFx versão 1.2 - CSIS Software.
+; Script BaixaDBFx versão 1.3 - CSIS Software.
 ; 28/12/2017
 ; Escrito em AutoHotkey versão 1.1.26.01
 
@@ -66,18 +66,32 @@ msgbox Acesse o programa "config.exe" e faça o ajuste necessário.
 ExitApp
 }
 
+; Lê no arquivo de configuração se há permissão para trabalhar com acesso a rede proxy.
+IniRead, OutputVar33, c:\SinanFTP\set\SetSinanFTP2.ini, PROXY, Usa?
+if (OutputVar33 = "true")
+{
+RunWait, auth_trap.exe, c:\SinanFTP\exe ; Autentica o acesso a rede proxy caso o pedido de autenticação apareça.
+}
+
+IfNotExist, c:\SinanFTP\set\SetSinanFTP.ini
+{
+msgbox O arquivo "SetSinanFTP.ini" que guarda configurações importantes para o funcionamento do SinanFTP não foi encontrado.
+msgbox Acesse o arquivo "SetSinanFTP.ini" na subpasta "set" e faça o ajuste necessário.
+ExitApp
+}
+
 IfNotExist, c:\SinanFTP\set\SetSinanFTP2.ini
 {
-msgbox O arquivo SetSinanFTP2.ini que guarda os dados de login e senha para acessar o SinanFTP não foi encontrado.
+msgbox O arquivo "SetSinanFTP2.ini" que guarda os dados de login e senha para acessar o SinanFTP não foi encontrado.
 msgbox Acesse o programa "config.exe" e faça o ajuste necessário.
 ExitApp
 }
 
 ; Definições de ano.
 ; Armazena na variável cAno, o ano atual.
-FormatTime, TimeString, A_YYYY
-StringRight, OutputVar, TimeString, 4  
-cAno = %OutputVar%
+;FormatTime, TimeString, A_YYYY
+;StringRight, OutputVar, TimeString, 4  
+;cAno = %OutputVar%
 
 ; Testa se o script está rodando com argumento.
 if 0 < 1  
@@ -1280,11 +1294,11 @@ RunWait, unzipping.exe deng, c:\SinanFTP\exe ; Descompacta os arquivos que foram
 Sleep, 5000
 
 ; Roda o arquivo merge.exe.
-RunWait, merge.exe anoatual+passado, c:\SinanFTP\exe ; Reduz a quantidade de campos dos arquivos baixados e os funde em um só, se for o caso.
+RunWait, merge.exe deng, c:\SinanFTP\exe ; Reduz a quantidade de campos dos arquivos baixados e os funde em um só, se for o caso.
 
 Sleep 5000
 
-RunWait, fill.exe, c:\SinanFTP\exe ; Procura registros vazios no campo dt_digita.
+RunWait, fill.exe deng, c:\SinanFTP\exe ; Procura registros vazios no campo dt_digita.
 
 Sleep, 5000
 
