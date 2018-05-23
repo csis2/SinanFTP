@@ -1,4 +1,4 @@
-*SinanFTP*
+## **SinanFTP** ##
 
 Automatização de download no SINAN Online
 ([www.saude.gov.br/sinan](file:///C:\Users\flavi\Desktop\www.saude.gov.br\sinan)).
