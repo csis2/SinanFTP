@@ -1,7 +1,7 @@
-## **SinanFTP** ##
+# **SinanFTP** #
 
 Automatização de download no SINAN Online
-([www.saude.gov.br/sinan](file:///C:\Users\flavi\Desktop\www.saude.gov.br\sinan)).
+([www.saude.gov.br/sinan](www.saude.gov.br\sinan)).
 
 Esse projeto visa construir uma aplicação para automatizar os downloads
 de arquivos DBF do SINAN Online.
