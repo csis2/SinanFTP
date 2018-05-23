@@ -1,4 +1,0 @@
-open ftp://sinan_ftp:9c6yrbrj@pentaho-prod.saude-go.net
-cd /Dengue
-get -delete teste.ftp c:\sinanftp\tmp\ftp\
-exit
