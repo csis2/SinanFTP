@@ -16,5 +16,3 @@ O projeto está sendo desenvolvido usando a linguagem xHarbour e mais
 três linguagens de script: AutoHotkey, Windows batch scripting
 (linguagem batch) e WinSCP scripting.
 
-![](media/image1.png){width="5.913194444444445in"
-height="2.504166666666667in"}
