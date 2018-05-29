@@ -16,4 +16,4 @@ O projeto está sendo desenvolvido usando a linguagem xHarbour e mais
 três linguagens de script: AutoHotkey, Windows batch scripting
 (linguagem batch) e WinSCP scripting.
 
-![alt text](https://raw.githubusercontent.com/csisgo/SinanFTP/master/img/SinanFTP.jpg)
+![alt text](https://raw.githubusercontent.com/csisgo/SinanFTP/master/img/SinanFTP.png)
