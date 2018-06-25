@@ -1,0 +1,4 @@
+open ftp://sinan_ftp:Co6L!QEN@pentaho8-prod.saude-go.net
+cd /Chikungunya
+put c:\sinanftp\tmp\chik\chikon.dbf
+exit
