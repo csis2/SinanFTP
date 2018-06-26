@@ -191,9 +191,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -232,9 +241,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -269,9 +287,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -291,9 +318,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -351,9 +387,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -371,9 +416,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -408,9 +462,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -429,9 +492,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -481,9 +553,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -502,9 +583,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -554,9 +644,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -575,9 +674,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -667,9 +775,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -688,9 +805,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -746,9 +872,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -767,9 +902,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1211,9 +1355,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1250,9 +1403,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1412,9 +1574,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1433,9 +1604,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1483,9 +1663,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1504,9 +1693,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1555,9 +1753,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1576,9 +1783,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1619,9 +1835,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
@@ -1640,9 +1865,18 @@ FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
 TestString := TimeString "-------Finalizando processo SinanFTP. `r`n"
 file.Write(TestString)
 file.Close()
-
 Sleep 3000
-RunWait, autotask.exe, c:\SinanFTP\exe, max ; como o processo falhou, agenda uma nova tarefa.
+
+if (argui = "deng") ; argumento deng.
+{
+RunWait, autotask.exe deng, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento deng, já que a atual falhou.
+}
+
+if (argui = "chik") ; argumento chik.
+{
+RunWait, autotask.exe chik, c:\SinanFTP\exe ; Agenda uma nova tarefa para o argumento chik, já que a atual falhou.
+}
+
 Sleep 3000
 RunWait, log_close.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
 Sleep 3000
