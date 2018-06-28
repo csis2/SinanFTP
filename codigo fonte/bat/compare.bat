@@ -33,7 +33,9 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 ) else (
 echo Arquivo dengon1.dbf nao detectado. Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Arquivo dengon1.dbf nao detectado. Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 exit
 )
 )
@@ -45,7 +47,9 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 ) else (
 echo Arquivo chikon1.dbf nao detectado. Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Arquivo chikon1.dbf nao detectado. Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 exit
 )
 )
@@ -85,7 +89,9 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 ) else (
 echo Arquivo dengon2.dbf nao detectado. Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Arquivo dengon2.dbf nao detectado. Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 exit
 )
 
@@ -98,14 +104,20 @@ echo O arquivo dengon.dbf foi corretamente enviado pelo FTP.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------O arquivo dengon.dbf foi corretamente enviado para o FTP. >>c:\sinanftp\log\sinanFTP.log
 echo Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 START "" /D c:\sinanftp\exe\ "sinanmail.exe" deng ok
+timeout 8
 exit
 ) else (
 echo O processo falhou. O arquivo dengon.dbf nao foi enviado pelo FTP.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------O processo falhou. O arquivo dengon.dbf nao foi enviado pelo FTP. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 START "" /D c:\sinanftp\exe\ "sinanmail.exe" deng error
+timeout 8
 exit
 )
 
@@ -126,7 +138,9 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 ) else (
 echo Arquivo chikon2.dbf nao detectado. Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Arquivo chikon2.dbf nao detectado. Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 exit
 )
 
@@ -139,25 +153,35 @@ echo O arquivo chikon.dbf foi corretamente enviado pelo FTP.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------O arquivo chikon.dbf foi corretamente enviado para o FTP. >>c:\sinanftp\log\sinanFTP.log
 echo Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 START "" /D c:\sinanftp\exe\ "sinanmail.exe" chik ok
+timeout 8
 exit
 ) else (
 echo O processo falhou. O arquivo chikon.dbf nao foi enviado pelo FTP.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------O processo falhou. O arquivo chikon.dbf nao foi enviado pelo FTP. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 START "" /D c:\sinanftp\exe\ "sinanmail.exe" chik error
+timeout 8
 exit
 )
 
 :vazio
 echo Nao foi usado nenhum argumento na linha de comando para usar este script.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Nao foi usado nenhum argumento na linha de comando para usar este script. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 exit
 
 :invalido
 echo O argumento na linha de comando para usar este script e invalido.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------O argumento na linha de comando para usar este script e invalido. >>c:\sinanftp\log\sinanFTP.log
+timeout 8
 call c:\sinanftp\bat\log_close.bat
+timeout 8
 exit

@@ -33,7 +33,9 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 ) else (
 echo Arquivo dengon.dbf nao detectado. Fim do script...
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Arquivo dengon.dbf nao detectado. Fim do script... >>c:\sinanftp\log\sinanFTP.log
+timeout 5
 call c:\sinanftp\bat\log_close.bat
+timeout 5
 exit
 )
 )
@@ -45,19 +47,25 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 ) else (
 echo Arquivo chikon.dbf nao detectado. Fim do script...
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Arquivo chikon.dbf nao detectado. Fim do script... >>c:\sinanftp\log\sinanFTP.log
+timeout 5
 call c:\sinanftp\bat\log_close.bat
+timeout 5
 exit
 )
 )
 
 if %1 == deng (
 copy c:\sinanFTP\tmp\deng\dengon.dbf c:\sinanFTP\tmp\ftp
+timeout 6
 rename c:\sinanFTP\tmp\ftp\dengon.dbf dengon1.dbf
+timeout 6
 )
 
 if %1 == chik (
 copy c:\sinanFTP\tmp\chik\chikon.dbf c:\sinanFTP\tmp\ftp
+timeout 6
 rename c:\sinanFTP\tmp\ftp\chikon.dbf chikon1.dbf
+timeout 6
 )
 
 if %1 == deng (
@@ -76,11 +84,13 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 cd\
 cd c:\sinanftp\tmp\deng\
 rename dengon.dbf dengon_%date:~-10,2%%date:~-7,2%%date:~-4,4%_%time:~0,2%%time:~3,2%%time:~6,2%.dbf
+timeout 6
 echo Feito.
 
 echo Movendo o arquivo DENGON+data+hora para a pasta dbf.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Movendo o arquivo DENGON+data+hora para a pasta dbf. >>c:\sinanftp\log\sinanFTP.log
 move dengon_*.dbf c:\sinanftp\dbf\
+timeout 6
 echo Feito.
 
 exit
@@ -102,11 +112,13 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 cd\
 cd c:\sinanftp\tmp\chik\
 rename chikon.dbf chikon_%date:~-10,2%%date:~-7,2%%date:~-4,4%_%time:~0,2%%time:~3,2%%time:~6,2%.dbf
+timeout 6
 echo Feito.
 
 echo Movendo o arquivo CHIKON+data+hora para a pasta dbf.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Movendo o arquivo CHIKON+data+hora para a pasta dbf. >>c:\sinanftp\log\sinanFTP.log
 move chikon_*.dbf c:\sinanftp\dbf\
+timeout 6
 echo Feito.
 
 exit
@@ -115,11 +127,15 @@ exit
 :vazio
 echo Nao foi usado nenhum argumento na linha de comando para usar este script.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Nao foi usado nenhum argumento na linha de comando para usar este script. >>c:\sinanftp\log\sinanFTP.log
+timeout 4
 call c:\sinanftp\bat\log_close.bat
+timeout 6
 exit
 
 :invalido
 echo O argumento na linha de comando para usar este script e invalido.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------O argumento na linha de comando para usar este script e invalido. >>c:\sinanftp\log\sinanFTP.log
+timeout 4
 call c:\sinanftp\bat\log_close.bat
+timeout 6
 exit
