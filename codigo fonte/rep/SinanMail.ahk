@@ -273,3 +273,5 @@ TestString := TimeString "-------Email enviado. Finalizando script. `r`n"
 file.Write(TestString)
 file.Close()
 RunWait, log_close2.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
+Sleep 5000
+ExitApp
