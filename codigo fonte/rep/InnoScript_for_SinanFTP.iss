@@ -37,11 +37,11 @@ Name: "C:\SinanFTP\tmp\deng"
 Name: "C:\SinanFTP\tmp\ftp"
 
 [Files]
-Source: "C:\SinanFTP-master\bat\*"; DestDir: "C:\SinanFTP\bat\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\SinanFTP-master\doc\*"; DestDir: "C:\SinanFTP\doc\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\SinanFTP-master\exe\*"; DestDir: "C:\SinanFTP\exe\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\SinanFTP-master\img\*"; DestDir: "C:\SinanFTP\img\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\SinanFTP-master\set\*"; DestDir: "C:\SinanFTP\set\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\SinanFTP-master\codigo fonte\bat\*"; DestDir: "C:\SinanFTP\bat\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\SinanFTP-master\codigo fonte\doc\*"; DestDir: "C:\SinanFTP\doc\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\SinanFTP-master\codigo fonte\exe\*"; DestDir: "C:\SinanFTP\exe\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\SinanFTP-master\codigo fonte\img\*"; DestDir: "C:\SinanFTP\img\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\SinanFTP-master\codigo fonte\set\*"; DestDir: "C:\SinanFTP\set\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
