@@ -541,7 +541,7 @@ WinActivate
 sleep, 5000
 
 ;procura pelo item "Solicitar exportação de base de dados em DBF" no SINAN Online.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\BaseDBF.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\baseDBF.bmp
 
 if ErrorLevel = 2
 {
@@ -763,7 +763,7 @@ Sleep, 1000
 Send {Space}
 
 ; Procura pelo botão "Solicitar"
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\Solicitar.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\solicitar.bmp
 
 if ErrorLevel = 2
 {

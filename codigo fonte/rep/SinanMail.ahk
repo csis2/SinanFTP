@@ -127,7 +127,7 @@ file.Close()
 }
 
 ; testa se o Gmail está logado ou não.
-if WinExist("entrada") ; testa se o Gmail está logado.
+if WinExist("Entrada") ; testa se o Gmail está logado.
 {
 file := FileOpen("c:\SinanFTP\mail\SinanFTPMail.log", "a")
 FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
@@ -156,7 +156,7 @@ Send {Enter}
 Sleep 16000
 }
 
-if WinExist("entrada") ; testa se o Gmail está logado.
+if WinExist("Entrada") ; testa se o Gmail está logado.
 {
 file := FileOpen("c:\SinanFTP\mail\SinanFTPMail.log", "a")
 FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
@@ -262,6 +262,94 @@ Sleep 1000
 Send {Enter}
 Sleep 5000
 }
+
+; Procura pelo icone "Anexar" usando o ImageSearch. 
+Sleep, 10000
+
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\anexar.bmp
+
+if ErrorLevel = 2
+{
+file := FileOpen("c:\SinanFTP\mail\SinanFTPMail.log", "a")
+FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
+TestString := TimeString "-------Falha na identificação do icone Anexar. `r`n"
+file.Write(TestString)
+FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
+TestString := TimeString "-------Finalizando o script SinanMail. `r`n"
+file.Write(TestString)
+file.Close()
+Sleep 3000
+
+Sleep 3000
+RunWait, log_close2.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
+Sleep 3000
+
+Process, close, firefox.exe
+ExitApp ; finaliza o script.
+}	
+
+else if ErrorLevel = 1
+{
+file := FileOpen("c:\SinanFTP\mail\SinanFTPMail.log", "a")
+FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
+TestString := TimeString "-------O icone Anexar não foi identificado na tela. `r`n"
+file.Write(TestString)
+FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
+TestString := TimeString "-------Finalizando o script SinanMail. `r`n"
+file.Write(TestString)
+file.Close()
+Sleep 3000
+
+Sleep 3000
+RunWait, log_close2.bat, c:\SinanFTP\bat, max ; finaliza e renomeia o log.
+Sleep 3000
+
+Process, close, firefox.exe
+ExitApp ; finaliza o script.
+}	
+
+else ; Icone "Anexar" identificado.
+
+{
+file := FileOpen("c:\SinanFTP\mail\SinanFTPMail.log", "a")
+FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
+TestString := TimeString "-------Icone Anexar foi identificado. `r`n"
+file.Write(TestString)
+file.Close()
+sleep, 3000
+
+MouseMove FoundX+20, FoundY+5
+sleep, 2000
+MouseClick, left, FoundX+20, FoundY+5
+
+file := FileOpen("c:\SinanFTP\mail\SinanFTPMail.log", "a")
+FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
+TestString := TimeString "-------Icone Anexar foi clicado. `r`n"
+file.Write(TestString)
+file.Close()
+}	
+
+Sleep 12000
+
+; Anexa o arquivo de log do SinanFTP salvo na subpasta "deng".
+if (cArgui2 = "deng")
+{
+Send c:\SinanFTP\tmp\deng\SinanFTP.log
+}
+
+; Anexa o arquivo de log do SinanFTP salvo na subpasta "chik".
+if (cArgui2 = "chik")
+{
+Send c:\SinanFTP\tmp\chik\SinanFTP.log
+}
+
+Sleep 6000
+
+Send {Enter}
+
+Sleep 15000
+
+; Envia o e-mail e fecha o firefox.
 
 Send ^{Enter}
 Sleep 15000
