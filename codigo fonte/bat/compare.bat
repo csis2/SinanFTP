@@ -105,6 +105,8 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 echo Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
 timeout 8
+copy c:\sinanftp\log\sinanFTP.log c:\sinanFTP\tmp\deng\
+timeout 5
 call c:\sinanftp\bat\log_close.bat
 timeout 8
 START "" /D c:\sinanftp\exe\ "sinanmail.exe" deng ok
@@ -154,6 +156,8 @@ echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%
 echo Fim do script compare.bat.
 echo %time:~0,2%:%time:~3,2%:%time:~6,2% %date:~-10,2%/%date:~-7,2%/%date:~-4,4%-------Fim do script compare.bat. >>c:\sinanftp\log\sinanFTP.log
 timeout 8
+copy c:\sinanftp\log\sinanFTP.log c:\sinanFTP\tmp\chik\
+timeout 5
 call c:\sinanftp\bat\log_close.bat
 timeout 8
 START "" /D c:\sinanftp\exe\ "sinanmail.exe" chik ok
