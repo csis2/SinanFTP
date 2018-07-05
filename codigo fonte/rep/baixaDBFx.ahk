@@ -275,7 +275,7 @@ file.Close()
 Sleep, 1000
 
 ;procura pelo botão "Entrar" no SINAN Online.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\entrar.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\entrar.png
 
 if ErrorLevel = 2
 {
@@ -375,7 +375,7 @@ file.Close()
 sleep, 7000
 
 ;procura pelo ícone "Principal" no SINAN Online para confirmar login.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\principal.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\principal.png
 
 if ErrorLevel = 2
 {
@@ -450,7 +450,7 @@ file.Close()
 Loop, %nLooping% ; A variável nLooping define quantas vezes o formulário será preenchido.
 {
 ;procura pelo módulo "Exportação" no SINAN Online.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\export.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\export.png
 
 if ErrorLevel = 2
 {
@@ -541,7 +541,7 @@ WinActivate
 sleep, 5000
 
 ;procura pelo item "Solicitar exportação de base de dados em DBF" no SINAN Online.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\baseDBF.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\baseDBF.png
 
 if ErrorLevel = 2
 {
@@ -632,7 +632,7 @@ WinActivate
 sleep, 4000
 
 ;Identifica se o usuário teve acesso ao módulo de Exportação de dados em DBF.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\identificacao.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\identificacao.png
 
 if ErrorLevel = 2
 {
@@ -763,7 +763,7 @@ Sleep, 1000
 Send {Space}
 
 ; Procura pelo botão "Solicitar"
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\solicitar.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\solicitar.png
 
 if ErrorLevel = 2
 {
@@ -860,7 +860,7 @@ WinActivate
 }
 
 ; Procura pela mensagem que confirma que a solicitação do arquivo foi efetuada.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\sol_efetuada.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\sol_efetuada.png
 
 if ErrorLevel = 2
 {
@@ -1562,7 +1562,7 @@ Consulta:
 Sleep, 10000
 
 ;procura pelo módulo "Exportação" no SINAN Online.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\export.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\export.png
 
 if ErrorLevel = 2
 {
@@ -1651,7 +1651,7 @@ WinActivate
 }
 
 ;procura pelo item "Consultar exportações DBF.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\consultar.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\consultar.png
 
 if ErrorLevel = 2
 {
@@ -1741,7 +1741,7 @@ WinActivate
 
 Sleep, 7000
 ;procura pela imagem "link" para atestar que o módulo de consulta foi acessado.
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\link.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\link.png
 
 if ErrorLevel = 2
 {
@@ -1823,7 +1823,7 @@ Desmarca:
 Sleep, 3000
 
 ;procura por uma área do texto que não seja um botão ou link e que não seja alterada pela seleção (CTRL+A).
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\area_neutra.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\area_neutra.png
 
 if ErrorLevel = 2
 {

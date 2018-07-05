@@ -266,7 +266,7 @@ Sleep 5000
 ; Procura pelo icone "Anexar" usando o ImageSearch. 
 Sleep, 10000
 
-ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\anexar.bmp
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, c:\SinanFTP\img\anexar.png
 
 if ErrorLevel = 2
 {
@@ -318,9 +318,9 @@ file.Write(TestString)
 file.Close()
 sleep, 3000
 
-MouseMove FoundX+20, FoundY+5
+MouseMove FoundX+10, FoundY+5
 sleep, 2000
-MouseClick, left, FoundX+20, FoundY+5
+MouseClick, left, FoundX+10, FoundY+5
 
 file := FileOpen("c:\SinanFTP\mail\SinanFTPMail.log", "a")
 FormatTime, TimeString, dd/MM/yyyy hh:mm:ss tt
