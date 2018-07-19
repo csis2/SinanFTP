@@ -18,7 +18,7 @@ três linguagens de script: AutoHotkey, Windows batch scripting
 
 ![alt text](https://raw.githubusercontent.com/csisgo/SinanFTP/master/SinanFTP.png)
 
-# *Documentação* #
+# **Documentação** #
 
 ![alt text](https://raw.githubusercontent.com/csisgo/SinanFTP/master/under_construction.png)
 
