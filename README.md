@@ -23,4 +23,4 @@ três linguagens de script: AutoHotkey, Windows batch scripting
 ![alt text](https://raw.githubusercontent.com/csisgo/SinanFTP/master/under_construction.png)
 
 As instruções de configuração e uso do SinanFTP ainda não estão prontas.
-Acesse ![aqui] (https://raw.githubusercontent.com/csisgo/SinanFTP/master/SinanFTP.pdf).
+Acesse [link]: https://raw.githubusercontent.com/csisgo/SinanFTP/master/SinanFTP.pdf
