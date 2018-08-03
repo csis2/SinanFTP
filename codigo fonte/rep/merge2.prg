@@ -147,7 +147,7 @@ endif
 * Um a um os arquivos descompactados são anexados no arquivo que foi criado: chikx.dbf. 
 if HB_ArgV( 1 ) = "chik"
 use "c:\sinanftp\tmp\chik\chikx"
-append from (cFile) fields classi_fin, criterio, evolucao, dt_encerra
+append from (cFile) fields nu_notific, dt_sin_pri, sem_pri, id_mn_resi, classi_fin,	dt_obito, coufinf
 close all
 endif
 
